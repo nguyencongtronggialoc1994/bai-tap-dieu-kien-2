@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính số ngày trong 1 tháng</title>
+</head>
+<body>
+<form>
+    <b>HÃY NHẬP SỐ THÁNG MUỐN TÍNH BÊN DƯỚI</b><br>
+    <input type="text" id="nhapthang">
+    <button type="button" onclick="xindungkich()">Tính số ngày</button>
+    <p id="result"></p>
+</form>
+</body>
+<script>
+    function xindungkich() {
+        let x = document.getElementById("nhapthang").value;
+        let month = parseInt(x);
+        switch (month) {
+            case 1:
+                document.getElementById("result").innerHTML ='Tháng  ' + month + '  có:  ' + 31 +' ' +'ngày';
+                break;
+            case 2:
+               document.getElementById("result").innerHTML ='Tháng  ' + month + '  có:  ' + 28 +' ' + 'ngày';
+                break;
+            case 3:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 31 +' ' + 'ngày';
+                break;
+            case 4:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 30 +' ' + 'ngày';
+                break;
+            case 5:
+               document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 31 +' ' + 'ngày';
+                break;
+            case 6:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 30 +' ' + 'ngày';
+                break;
+            case 7:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 31 +' ' + 'ngày';
+                break;
+            case 8:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 31 +' ' + 'ngày';
+                break;
+            case 9:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 30 +' ' + 'ngày';
+                break;
+            case 10:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 31 +' ' + 'ngày';
+                break;
+            case 11:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 30 +' ' + 'ngày';
+                break;
+            case 12:
+                document.getElementById("result").innerHTML='Tháng  ' + month + '  có:  ' + 31 +' ' + 'ngày';
+                break;
+        }
+    }
+</script>
+</html>

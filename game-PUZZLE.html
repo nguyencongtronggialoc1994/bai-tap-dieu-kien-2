@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #myImg {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+<img id="myImg" onclick="anhconcho()"
+     src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyLdO6rO3MXLqHT2H-DuzbvPQD6-PrZPDOPw&usqp=CAU">
+</body>
+<script>
+    let count = 1;
+    let x = document.getElementById("myImg");
+
+    function anhconcho() {
+        if (count == 1) {
+            x.src = "https://dogily.vn/wp-content/uploads/2019/09/Chu-cho-Anuko-noi-tieng-tren-mang-xa-hoi.jpg";
+            count++;
+        } else if (count == 2) {
+            x.src = "https://toplist.vn/images/800px/bai-van-ta-con-cho-so-3-283600.jpg";
+            count++;
+        } else {
+            x.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRyLdO6rO3MXLqHT2H-DuzbvPQD6-PrZPDOPw&usqp=CAU";
+            count = 1;
+        }
+    }
+</script>
+</html>
